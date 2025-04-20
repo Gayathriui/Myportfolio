@@ -1,0 +1,130 @@
+:root {
+    --bg: #ffffff;
+    --text: #1a1a1a;
+    --accent: #0077ff;
+    --secondary: #f0f0f0;
+  }
+  
+  body.dark {
+    --bg: #121212;
+    --text: #f4f4f4;
+    --accent: #00c3ff;
+    --secondary: #1e1e1e;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  header {
+    background: #000; /* Black navbar */
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    color: var(--accent);
+  }
+  .profile-img {
+    width: 150px; /* Adjust width */
+    height: 150px; /* Keep height same for a square */
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image covers the area */
+    margin-bottom: 1rem; /* Space below the image */
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    transition: background 0.3s;
+  }
+  
+  .nav-links a:hover {
+    background: var(--accent);
+    color: #fff;
+  }
+  
+  #dark-mode-toggle {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: white;
+  }
+  
+  main {
+    padding: 2rem;
+    max-width: 900px;
+    margin: auto;
+  }
+  
+  section {
+    margin-bottom: 3rem;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    color: var(--accent);
+    margin-bottom: 1rem;
+  }
+  
+  .project {
+    background: var(--secondary);
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  }
+  
+  .skills {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .skills li {
+    background: var(--accent);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+  }
+  
+  a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background: var(--secondary);
+    margin-top: 2rem;
+  }
+  
